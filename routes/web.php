@@ -20,8 +20,8 @@
 	
 // 	return $result;
 // });
-// $app->get('book','BookController@index');
-// $app->post('book','BookController@createBook');
+$app->get('book','BookController@index');
+$app->post('book','BookController@createBook');
 
 // $app->get('/', function() use ($app) {
 //     return "Lumen RESTful API By CoderExample (https://coderexample.com)";
@@ -40,19 +40,19 @@
 //     $app->delete('UserInfo/{id}','UserInfoController@deleteUserInfo');
 // });
 
-$app->get('/', function() use ($app) {
-    return "Lumen RESTful API By CoderExample (https://coderexample.com)";
-});
+// $app->get('/', function() use ($app) {
+//     return "Lumen RESTful API By CoderExample (https://coderexample.com)";
+// });
  
-$app->group(['prefix' => 'api/v1','namespace' => 'App\Http\Controllers'], function($app)
-{
-    $app->get('book','BookController@index');
+// $app->group(['prefix' => 'api/v1','namespace' => 'App\Http\Controllers'], function($app)
+// {
+//     $app->get('book','BookController@index');
   
-    $app->get('book/{id}','BookController@getbook');
+//     $app->get('book/{id}','BookController@getbook');
       
-    $app->post('book','BookController@createBook');
+//     $app->post('book','BookController@createBook');
       
-    $app->put('book/{id}','BookController@updateBook');
+//     $app->put('book/{id}','BookController@updateBook');
       
-    $app->delete('book/{id}','BookController@deleteBook');
-});
+//     $app->delete('book/{id}','BookController@deleteBook');
+// });
