@@ -11,30 +11,30 @@
 |
 */
 
-// $app->get('/', function () use ($app) {
-//     return $app->version();
-// });
+$app->get('/', function () use ($app) {
+    return $app->version();
+});
 
-// $app->get('/api/v1/userinfo/', function() use ($app) {
-// 	$result= app('db')->select("SELECT * FROM user_information");
+$app->get('/api/v1/userinfo/', function() use ($app) {
+	$result= app('db')->select("SELECT * FROM user_information");
 	
-// 	return $result;
+	return $result;
+});
+
+
+// $app->get('/', function() use ($app) {
+//     return "Lumen RESTful API By CoderExample (https://coderexample.com)";
 // });
-
-
-$app->get('/', function() use ($app) {
-    return "Lumen RESTful API By CoderExample (https://coderexample.com)";
-});
  
-$app->group(['prefix' => 'api/v1','namespace' => 'App\Http\Controllers'], function($app)
-{
-    $app->get('UserInfo','UserInfoController@index');
+// $app->group(['prefix' => 'api/v1','namespace' => 'App\Http\Controllers'], function($app)
+// {
+//     $app->get('UserInfo','UserInfoController@index');
   
-    $app->get('UserInfo/{id}','UserInfoController@getUserInfo');
+//     $app->get('UserInfo/{id}','UserInfoController@getUserInfo');
       
-    $app->post('UserInfo','UserInfoController@createUserInfo');
+//     $app->post('UserInfo','UserInfoController@createUserInfo');
       
-    $app->put('UserInfo/{id}','UserInfoController@updateUserInfo');
+//     $app->put('UserInfo/{id}','UserInfoController@updateUserInfo');
       
-    $app->delete('UserInfo/{id}','UserInfoController@deleteUserInfo');
-});
+//     $app->delete('UserInfo/{id}','UserInfoController@deleteUserInfo');
+// });
