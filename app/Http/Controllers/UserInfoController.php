@@ -56,3 +56,4 @@ class UserInfoController extends Controller{
     }
   
 }
+?>
