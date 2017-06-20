@@ -11,9 +11,7 @@ class UserInfo extends Model
      * first_name, last_name, email, gender, city, street, latitude, longitude
      * @var array
      */
-    protected $fillable = [
-        'first_name', 'last_name', 'email', 'gender', 'city', 'street', 'latitude', 'longitude',
-    ];
+    protected $fillable = ['first_name', 'last_name', 'email', 'gender', 'city', 'street', 'latitude', 'longitude'];
 
 }
 ?>
