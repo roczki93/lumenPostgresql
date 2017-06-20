@@ -28,7 +28,7 @@ $app->get('/', function() use ($app) {
  
 $app->group(['prefix' => 'api/v1','namespace' => 'App\Http\Controllers'], function($app)
 {
-    $app->get('UserInfo','UserInfookController@index');
+    $app->get('UserInfo','UserInfoController@index');
   
     $app->get('UserInfo/{id}','UserInfoController@getUserInfo');
       
