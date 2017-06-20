@@ -20,28 +20,28 @@ class BookController extends Controller{
   
     public function getBook($id){
   
-        $Book  = Book::find($id);
+        $Book  = \App\Book::find($id);
   
         return response()->json($Book);
     }
   
     public function createBook(Request $request){
   
-        $Book = Book::create($request->all());
+        $Book = \App\Book::create($request->all());
   
         return response()->json($Book);
   
     }
   
     public function deleteBook($id){
-        $Book  = Book::find($id);
+        $Book  = \App\Book::find($id);
         $Book->delete();
  
         return response()->json('deleted');
     }
   
     public function updateBook(Request $request,$id){
-        $Book  = Book::find($id);
+        $Book  = \App\Book::find($id);
         $Book->title = $request->input('title');
         $Book->author = $request->input('author');
         $Book->isbn = $request->input('isbn');
