@@ -26,13 +26,13 @@ $app->get('api/v1/book','BookController@index');
 $app->post('api/v1/book','BookController@createBook');
 $app->get('api/v1/book/{id}','BookController@getbook');
 $app->get('api/v1/userinfo','UserInfoController@index');
-    $app->get('api/v1/UserInfo/{id}','UserInfoController@getUserInfo');
+    $app->get('api/v1/userinfo/{id}','UserInfoController@getUserInfo');
       
-    $app->post('api/v1/UserInfo','UserInfoController@createUserInfo');
+    $app->post('api/v1/userinfo','UserInfoController@createUserInfo');
       
-    $app->put('api/v1/UserInfo/{id}','UserInfoController@updateUserInfo');
+    $app->put('api/v1/userinfo/{id}','UserInfoController@updateUserInfo');
       
-    $app->delete('api/v1/UserInfo/{id}','UserInfoController@deleteUserInfo');
+    $app->delete('api/v1/userinfo/{id}','UserInfoController@deleteUserInfo');
 // });
 // $app->get('/', function() use ($app) {
 //     return "Lumen RESTful API By CoderExample (https://coderexample.com)";
