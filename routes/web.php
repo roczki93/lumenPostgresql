@@ -22,9 +22,9 @@
 // });
 // $app->group(['prefix' => 'api/v1','namespace' => 'App\Http\Controllers'], function($app)
 // {
-$app->get('book','BookController@index');
-$app->post('book','BookController@createBook');
-$app->get('book/{id}','BookController@getbook');
+$app->get('api/v1/book','BookController@index');
+$app->post('api/v1/book','BookController@createBook');
+$app->get('api/v1/book/{id}','BookController@getbook');
 // });
 // $app->get('/', function() use ($app) {
 //     return "Lumen RESTful API By CoderExample (https://coderexample.com)";
