@@ -22,26 +22,26 @@
 // });
 // $app->group(['prefix' => 'api/v1','namespace' => 'App\Http\Controllers'], function($app)
 // {
-// $app->get('book','BookController@index');
-// $app->post('book','BookController@createBook');
-// $app->get('book/{id}','BookController@getbook');
+$app->get('book','BookController@index');
+$app->post('book','BookController@createBook');
+$app->get('book/{id}','BookController@getbook');
 // });
-$app->get('/', function() use ($app) {
-    return "Lumen RESTful API By CoderExample (https://coderexample.com)";
-});
+// $app->get('/', function() use ($app) {
+//     return "Lumen RESTful API By CoderExample (https://coderexample.com)";
+// });
  
-$app->group(['prefix' => 'api/v1','namespace' => 'App\Http\Controllers'], function($app)
-{
-    $app->get('UserInfo','UserInfoController@index');
+// $app->group(['prefix' => 'api/v1','namespace' => 'App\Http\Controllers'], function($app)
+// {
+//     $app->get('UserInfo','UserInfoController@index');
   
-    $app->get('UserInfo/{id}','UserInfoController@getUserInfo');
+//     $app->get('UserInfo/{id}','UserInfoController@getUserInfo');
       
-    $app->post('UserInfo','UserInfoController@createUserInfo');
+//     $app->post('UserInfo','UserInfoController@createUserInfo');
       
-    $app->put('UserInfo/{id}','UserInfoController@updateUserInfo');
+//     $app->put('UserInfo/{id}','UserInfoController@updateUserInfo');
       
-    $app->delete('UserInfo/{id}','UserInfoController@deleteUserInfo');
-});
+//     $app->delete('UserInfo/{id}','UserInfoController@deleteUserInfo');
+// });
 
 // $app->get('/', function() use ($app) {
 //     return "Lumen RESTful API By CoderExample (https://coderexample.com)";
