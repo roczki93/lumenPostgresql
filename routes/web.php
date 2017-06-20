@@ -15,7 +15,7 @@ $app->get('/', function () use ($app) {
     return $app->version();
 });
 
-$app->get('/user_info', function() use ($app) {
+$app->get('/api/v1/userinfo/', function() use ($app) {
 	$result= app('db')->select("SELECT * FROM user_information");
 	
 	return $result;
