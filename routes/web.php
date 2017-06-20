@@ -15,7 +15,7 @@ $app->get('/', function () use ($app) {
     return $app->version();
 });
 
-$app->get('/nic', function() use ($app) {
+$app->get('/user_info', function() use ($app) {
 	$result= app('db')->select("SELECT * FROM user_information");
 	
 	return $result;
