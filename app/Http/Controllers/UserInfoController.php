@@ -12,7 +12,7 @@ class UserInfoController extends Controller{
   
     public function index(){
   
-        $UserInfo  = \App\UserInfo::all()->limit(10);
+        $UserInfo  = \App\UserInfo::all()->take(10)->get();
   
         return response()->json($UserInfo);
   
