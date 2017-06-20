@@ -12,8 +12,8 @@ class UserInfoController extends Controller{
   
     public function index(){
   
-        $UserInfo  = \App\UserInfo::all()->orderBy('id')->take(10);
-  
+        // $UserInfo  = \App\UserInfo::all()->take(10);
+        $UserInfo  = \App\UserInfo::orderBy('id','DESC')->get();
         return response()->json($UserInfo);
   
     }
