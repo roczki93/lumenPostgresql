@@ -20,7 +20,7 @@ $app->get('/api/v1/userinfo/', function() use ($app) {
 	
 	return $result;
 });
-
+$app->get('book','BookController@index');
 
 // $app->get('/', function() use ($app) {
 //     return "Lumen RESTful API By CoderExample (https://coderexample.com)";

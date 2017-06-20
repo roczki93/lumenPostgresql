@@ -12,7 +12,7 @@ class BookController extends Controller{
   
     public function index(){
   
-        $Books  = Book::all();
+        $Books  = \App\Book::all();
   
         return response()->json($Books);
   
