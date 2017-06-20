@@ -14,13 +14,14 @@
 $app->get('/', function () use ($app) {
     return $app->version();
 });
-
+ 
 $app->get('/api/v1/userinfo/', function() use ($app) {
 	$result= app('db')->select("SELECT * FROM user_information");
 	
 	return $result;
 });
-$app->get('book','BookController@index');
+$app->get('UserInfo','UserInfoController@index');
+$app->post('UserInfo','UserInfoController@createUserInfo');
 
 // $app->get('/', function() use ($app) {
 //     return "Lumen RESTful API By CoderExample (https://coderexample.com)";
