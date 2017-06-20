@@ -306,8 +306,7 @@ class ComposerStaticInit8a9b31851f2047a37d0db76f8471a9dd
     );
 
     public static $classMap = array (
-        'CreateBooksTable' => __DIR__ . '/../..' . '/database/migrations/2017_06_20_123808_create_books_table.php',
-        'CreateBooksTable–create' => __DIR__ . '/../..' . '/database/migrations/2017_06_20_162042_create_books_table–create=books.php',
+        'CreateBooksTable' => __DIR__ . '/../..' . '/database/migrations/2017_06_20_162042_create_books_table.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
         'ExampleTest' => __DIR__ . '/../..' . '/tests/ExampleTest.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
@@ -841,6 +840,7 @@ class ComposerStaticInit8a9b31851f2047a37d0db76f8471a9dd
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
         'TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
+        '–create' => __DIR__ . '/../..' . '/database/migrations/2017_06_20_173747_–create=user_information2.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
