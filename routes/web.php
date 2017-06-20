@@ -25,7 +25,7 @@
 $app->get('api/v1/book','BookController@index');
 $app->post('api/v1/book','BookController@createBook');
 $app->get('api/v1/book/{id}','BookController@getbook');
-$app->get('api/v1/UserInfo','UserInfoController@index');
+$app->get('api/v1/userinfo','UserInfoController@index');
 // });
 // $app->get('/', function() use ($app) {
 //     return "Lumen RESTful API By CoderExample (https://coderexample.com)";
