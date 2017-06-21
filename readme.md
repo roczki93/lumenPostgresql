@@ -19,3 +19,24 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Lumen framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+
+Install LAMP 
+
+update to 5.6.3 php
+
+1: yum install epel*
+2: yum update / yum upgrade
+3: 
+Code:
+CentOS and Red Hat Enterprise Linux 6.x
+wget http://rpms.famillecollet.com/enterprise/remi-release-6.rpm 
+sudo rpm -Uvh remi-release-6*.rpm
+
+CentOS and Red Hat Enterprise Linux 7.x
+wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm 
+sudo rpm -Uvh remi-release-7*.rpm
+4: yum update / yum upgrade
+5: yum --enablerepo=remi,remi-php56 update
+6: yum --enablerepo=remi,remi-php56 upgrade
+7: reboot
+8: php -v Big Grin
