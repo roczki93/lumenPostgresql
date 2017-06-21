@@ -27,8 +27,8 @@ class UserInfoController extends Controller{
   
     public function createUserInfo(Request $request){
   
-        $UserInfo = \App\UserInfo::create($request->all());
-        $UserInfo->timestamp = false;
+        $UserInfo = \App\UserInfo::create($request->all()->timestamp=false);
+        // $UserInfo->timestamp = false;
         return response()->json($UserInfo);
   
     }
