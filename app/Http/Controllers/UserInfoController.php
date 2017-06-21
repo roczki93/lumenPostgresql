@@ -50,8 +50,8 @@ class UserInfoController extends Controller{
         $UserInfo->street = $request->input('street');
         $UserInfo->latitude = $request->input('latitude');
         $UserInfo->longitude = $request->input('longitude');
-        $UserInfo->timestamp = false;
-        $UserInfo->save();
+
+        $UserInfo->save(['timestamps' => false]);
   
         return response()->json($UserInfo);
     }
