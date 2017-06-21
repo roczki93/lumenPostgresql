@@ -28,7 +28,7 @@ class UserInfoController extends Controller{
     public function createUserInfo(Request $request){
   
         $UserInfo = \App\UserInfo::create($request->all());
-  
+        $UserInfo->timestamp = false;
         return response()->json($UserInfo);
   
     }
@@ -50,6 +50,7 @@ class UserInfoController extends Controller{
         $UserInfo->street = $request->input('street');
         $UserInfo->latitude = $request->input('latitude');
         $UserInfo->longitude = $request->input('longitude');
+        $UserInfo->timestamp = false;
         $UserInfo->save();
   
         return response()->json($UserInfo);
